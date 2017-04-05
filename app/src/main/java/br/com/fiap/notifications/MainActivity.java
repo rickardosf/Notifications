@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         notificationBuilder.setContentText("Aqui vai a mensagem");
         notificationBuilder.setSmallIcon(R.drawable.icon);
         notificationBuilder.setVibrate(new long[]{100, 500, 100, 250, 100, 500});
-        notificationBuilder.setOngoing(true);
+        notificationBuilder.setOngoing(false);
         notificationBuilder.setContentIntent(PendingIntent.getActivity(this, 100,
                 new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT));
 
